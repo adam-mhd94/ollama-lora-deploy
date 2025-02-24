@@ -3,9 +3,13 @@ This project provides a step-by-step guide for converting and deploying a fine-t
 The process includes:
 
 ✅ Converting the base model to GGUF using llama.cpp
+
 ✅ Converting the fine-tuned LoRA adapter to GGUF (FP16 format)
+
 ✅ Merging the base model and LoRA adapter to create the final model
+
 ✅ Quantizing the merged model to optimize performance (Q4_0 format)
+
 ✅ Creating a Modelfile and deploying the model on Ollama
 
 Once completed, you can run your fine-tuned model on Ollama for efficient inference. 🚀
