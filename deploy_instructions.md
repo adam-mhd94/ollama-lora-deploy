@@ -61,7 +61,7 @@ TEMPLATE """{{ if .System }}<|im_start|>system
 ```
 Then:
 ```bash
-ollama create YourModelName -f your/Modelfile/path
+ollama create YourModelName -f Modelfile
 ```
 Finally, you can use the following commands to ensure your model has been added to Ollama and run it.
 ```bash
