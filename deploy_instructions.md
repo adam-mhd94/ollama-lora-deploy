@@ -19,13 +19,13 @@ python ./convert_hf_to_gguf.py --outfile /path/to/output/BaseModel.gguf /path/to
 
 ## 4. Convert Fine-Tuned LoRA Adapter to FP16 GGUF Format
 ```bash
-python ./convert_lora_to_gguf.py --base  /path/to/HuggingFace/base/model --outfile /path/to/output/lora_adaptor.gguf --outtype f16 /path/to/FineTuned/LoRA/Adapter
+python ./convert_lora_to_gguf.py --base  /path/to/HuggingFace/base/model --outfile /path/to/output/lora_adapter.gguf --outtype f16 /path/to/FineTuned/LoRA/Adapter
 ```
 
 ## 5. Merging GGUF-Formatted FP16 Base Model with Fine-Tuned LoRA Adapter
 
 ```bash
-./build/bin/llama-export-lora -m /path/to/output/BaseModel.gguf --lora /path/to/output/lora_adaptor.gguf -o /path/to/output/FinalModel.gguf
+./build/bin/llama-export-lora -m /path/to/output/BaseModel.gguf --lora /path/to/output/lora_adapter.gguf -o /path/to/output/FinalModel.gguf
 ```
 
 ## 6. Requantize the Merged Model to Q4_0 Precision
