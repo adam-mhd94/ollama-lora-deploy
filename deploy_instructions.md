@@ -4,7 +4,7 @@ To deploy a LoRA fine-tuned model on Ollama, follow these steps:
 
 ## 1. Install llama.cpp: 
 
-Ensure you have installed llama.cpp for converting the model.
+Ensure you have built llama.cpp locally for converting the model.
 
 ## 2. Navigate to llama.cpp Directory:
 ```bash
